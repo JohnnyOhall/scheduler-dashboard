@@ -1,13 +1,13 @@
-export function addInterview(id, interview) {
+export function addInterview( id, interview ) {
   return state => ({
     ...state,
-    days: state.days.map(day =>
-      day.appointments.includes(id) ? { ...day, spots: day.spots - 1 } : day
+    days: state.days.map( day =>
+      day.appointments.includes( id ) ? { ...day, spots: day.spots - 1 } : day
     ),
     appointments: {
       ...state.appointments,
-      [id]: {
-        ...state.appointments[id],
+      [ id ]: {
+        ...state.appointments[ id ],
         interview: interview
       }
     }
@@ -19,15 +19,15 @@ export default {
     {
       id: 1,
       name: "Monday",
-      appointments: [1, 2],
-      interviewers: [1, 2],
+      appointments: [ 1, 2 ],
+      interviewers: [ 1, 2 ],
       spots: 2
     },
     {
       id: 2,
       name: "Tuesday",
-      appointments: [3, 4],
-      interviewers: [1, 2],
+      appointments: [ 3, 4 ],
+      interviewers: [ 1, 2 ],
       spots: 2
     }
   ],
