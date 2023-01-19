@@ -1,4 +1,4 @@
-# Interview Scheduler Dashboard
+# Interview Scheduler Dashboard by John O'Halloran
 
 ## Setup
 
